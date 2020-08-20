@@ -1,0 +1,40 @@
+import Foundation
+import ExposureNotification
+
+struct ExposureConfiguration: Codable {
+
+  let minimumRiskScore: ENRiskScore
+  let attenuationDurationThresholds: [Int]
+  let attenuationLevelValues: [ENRiskLevelValue]
+  let daysSinceLastExposureLevelValues: [ENRiskLevelValue]
+  let durationLevelValues: [ENRiskLevelValue]
+  let transmissionRiskLevelValues: [ENRiskLevelValue]
+  let attenuationBucketWeights: [Float]
+  let triggerThresholdWeightedDuration: Int
+
+}
+
+extension ExposureConfiguration {
+
+  static var placeholder: ExposureConfiguration = {
+    ExposureConfiguration(minimumRiskScore: 15,
+                          attenuationDurationThresholds: [53, 60],
+                          attenuationLevelValues: [1, 2, 3, 4, 5, 6, 7, 8],
+                          daysSinceLastExposureLevelValues: [1, 2, 3, 4, 5, 6, 7, 8],
+                          durationLevelValues: [1, 2, 3, 4, 5, 6, 7, 8],
+                          transmissionRiskLevelValues: [1, 2, 3, 4, 5, 6, 7, 8],
+                          attenuationBucketWeights: [1, 0.5, 0],
+                          triggerThresholdWeightedDuration: 15)
+  }()
+
+  var asENExposureConfiguration: ENExposureConfiguration {
+    let config = ENExposureConfiguration()
+    config.metadata = ["attenuationDurationThresholds": attenuationDurationThresholds]
+    config.attenuationLevelValues = attenuationLevelValues.map { NSNumber(value: $0) }
+    config.daysSinceLastExposureLevelValues = daysSinceLastExposureLevelValues.map { NSNumber(value: $0) }
+    config.durationLevelValues = durationLevelValues.map { NSNumber(value: $0) }
+    config.transmissionRiskLevelValues = transmissionRiskLevelValues.map { NSNumber(value: $0) }
+    return config
+  }
+
+}

@@ -1,0 +1,87 @@
+{
+  "_display_name": "Italiano",
+  "about": {
+    "operating_system_abbr": "Sistema Operativo:",
+    "version": "Versione:"
+  },
+  "assessment": {
+    "agree_question_description": "Lo screening ti aiuta a prendere decisioni sulla ricerca di cure mediche appropriate. Non è destinato alla diagnosi o al trattamento della malattia o di altre condizioni.",
+    "agree_question_text": "Scopo di questo screening COVID-19",
+    "caregiver_cta": "Prossimo",
+    "caregiver_description": "Avvisare un operatore sanitario nella struttura di assistenza a lungo termine. Vivere in una struttura di cura a lungo termine o in una casa di cura può mettere a rischio di gravi malattie. \n\n<1>Informa un assistente</1> presso la struttura che sei malato e devi consultare un medico il prima possibile.",
+    "caregiver_title": "Notifica a un Assistente",
+    "complete_cta": "Fatto",
+    "complete_description": "Continua a usare questa applicazione ed esegui nuovamente lo screening la <1>prossima settimana</1> per proteggere te stessi e la tua comunità.",
+    "complete_title": "Completato!",
+    "distancing_cta": "Prossimo",
+    "distancing_description": "Seguire le linee guida locali, statali o nazionali per il <1>distanziamento sociale</1> e per i dispositivi di protezione individuale (DPI) come maschere e / o guanti. Non è necessaria alcuna azione aggiuntiva in questo momento.",
+    "distancing_title": "Distanziamento e DPI",
+    "emergency_cta": "Chiama i servizi di emergenza",
+    "emergency_description": "Potresti avere <1>un'emergenza medica</1>. È necessaria assistenza medica immediata. \n\nInforma l'operatore di emergenza se sei stato in contatto con qualcuno con il COVID-19 o se sei stato di recente in un'area in cui COVID-19 si sta diffondendo.",
+    "emergency_title": "Servizi di emergenza",
+    "isolate_cta": "Prossimo",
+    "isolate_description": "Hai <1>alcuni sintomi</1> che potrebbero essere correlati al COVID-19. Chiama il tuo medico se i sintomi peggiorano. Inizia l'isolamento a casa.",
+    "isolate_title": "Isola te stesso",
+    "next": "Prossimo",
+    "share_cta": "Capisco e acconsento",
+    "share_cta_skip": "No grazie, non voglio condividere i dati",
+    "share_description": "I tuoi dati anonimi aiutano la Boston Public Health Commission ad analizzare, tracciare e contenere la diffusione del COVID-19. I tuoi dati verranno aggregati a quelli di altri utenti PathCheck che scelgono di condividere. \n\nI tuoi dati contengono le risposte al sondaggio e il codice postale, ma nessuna informazione aggiuntiva o d'identificazione personale. \n\nLa Commissione per la salute pubblica di Boston conserverà i tuoi dati anonimi per un determinato periodo di tempo.",
+    "share_title": "Pubblica dati anonimi",
+    "start_cta": "Inizio",
+    "start_description": "Le tue informazioni sono private, anonime e crittografate. Nessun dato lascia il tuo dispositivo senza la tua autorizzazione.",
+    "start_title": "Rispondi alle domande sui sintomi e sull'anamnesi per sapere cosa in caso di COVID-19"
+  },
+  "common": {
+    "continue": "Continua",
+    "done": "Fatto",
+    "next": "Fatto",
+    "something_went_wrong": "Si è verificato un errore",
+    "start": "Inizio"
+  },
+  "export": {
+    "code_input_body_bluetooth": "Digita il codice di verifica fornito da {{name}} con il risultato del test per verificare la diagnosi.",
+    "code_input_title_bluetooth": "Verifica la tua diagnosi",
+    "complete_body_bluetooth": "Scegliendo di condividere il tuo stato e avvisare anonimamente gli altri, stai aiutando a contenere la diffusione del virus e proteggere gli altri nella tua comunità.",
+    "complete_title": "Grazie per aver tenuto al sicuro la tua comunità!",
+    "consent_button_title": "Capisco e acconsento",
+    "publish_consent_body_bluetooth": "La condivisione della diagnosi positiva è facoltativa e può essere effettuata solo con il tuo consenso. \n\nSe scegli di farlo, stai aiutando gli altri nella tua comunità a prendere decisioni informate sulla loro salute e facendo la tua parte per contenere la diffusione del virus. \n\nLe uniche informazioni condivise saranno delle liste di numeri casuali scambiati dal telefono tramite Bluetooth con altri telefoni vicini negli ultimi 14 giorni, insieme a un punteggio di rischio ponderato basato sullo sviluppo dei sintomi.",
+    "publish_consent_title_bluetooth": "Avvisare gli altri nella tua comunità",
+    "start_body_bluetooth": "Scegli di avvisare anonimamente gli altri che potresti aver incontrato e di aiutare la tua comunità a contenere la diffusione del virus.",
+    "start_title_bluetooth": "Aiuta a contenere la diffusione del virus e proteggi gli altri nella tua comunità se ti viene diagnosticato o se risulti positivo al test per il COVID-19."
+  },
+  "exposure_history": {
+    "how_does_this_work": "Come funziona?",
+    "last_days": "Ultimi 21 giorni",
+    "why_did_i_get_an_en": "Perché ho ricevuto una notifica di esposizione?",
+    "why_did_i_get_an_en_para": "Riceverai una notifica di esposizione quando qualcuno che hai incrociato riceverà in seguito una diagnosi o un test confermati e positivi per COVID-19 e sceglie d'informare gli altri"
+  },
+  "home": {
+    "bluetooth": {
+      "all_services_on_subheader": "Le notifiche di esposizione sono attive",
+      "tracing_off_header": "Notifiche disabilitate",
+      "tracing_off_subheader": "Non riceverai notifiche su possibili esposizioni"
+    }
+  },
+  "label": {
+    "launch_enable_notif": "Attiva le Notifiche",
+    "launch_get_started": "Cominciamo",
+    "launch_screen1_header": "Benvenuti in PathCheck",
+    "legal_page_address": "PathCheck Foundation\n58 Day Street\nBox 441621\nSomerville, MA 02144",
+    "privacy_policy": "Informativa sulla privacy",
+    "unknown": "sconosciuto"
+  },
+  "navigation": {
+    "exposure_history": "Cronologia delle esposizioni",
+    "home": "Home",
+    "more": "Altro",
+    "self_assessment": "Salute"
+  },
+  "onboarding": {
+    "notification_header": "Desideri ricevere notifiche quando potresti aver incrociato percorsi con il virus?"
+  },
+  "screen_titles": {
+    "about": "Informazioni",
+    "exposure_history": "Cronologia delle esposizioni",
+    "legal": "Legale"
+  }
+}

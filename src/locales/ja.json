@@ -1,0 +1,21 @@
+{
+  "_display_name": "日本語",
+  "assessment": {
+    "caregiver_cta": "次へ進む",
+    "distancing_cta": "次へ進む",
+    "isolate_cta": "次へ進む",
+    "next": "次へ進む"
+  },
+  "common": {
+    "next": "次へ進む"
+  },
+  "label": {
+    "launch_enable_notif": "お知らせを有効にする",
+    "launch_get_started": "開始する",
+    "legal_page_address": "PathCheck Foundation\n58 Day Street\nBox 441621\nSomerville, MA 02144"
+  },
+  "screen_titles": {
+    "about": "セーフパスについて",
+    "legal": "リーガル"
+  }
+}

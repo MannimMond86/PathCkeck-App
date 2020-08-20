@@ -1,0 +1,28 @@
+{
+  "_display_name": "العربية",
+  "about": {
+    "operating_system_abbr": "نظام التشغيل:",
+    "version": "الإصدار:"
+  },
+  "assessment": {
+    "caregiver_cta": "التالى",
+    "complete_cta": "تم",
+    "distancing_cta": "التالى",
+    "isolate_cta": "التالى",
+    "next": "التالى"
+  },
+  "common": {
+    "continue": "استمر",
+    "done": "تم",
+    "next": "تم"
+  },
+  "label": {
+    "launch_enable_notif": "فعل الإشعارات",
+    "launch_get_started": "ابدأ",
+    "launch_screen1_header": "طريق العودة إلى الوضع الطبيعي يبدأ من هنا"
+  },
+  "screen_titles": {
+    "about": "نبذة عنا",
+    "legal": "النظام القانوني"
+  }
+}

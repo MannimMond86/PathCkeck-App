@@ -1,0 +1,156 @@
+{
+  "name": "PathCheckBT",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "clean": "rm -rf node_modules && yarn",
+    "start": "yarn && react-native start",
+    "tsc": "tsc --noEmit",
+    "prettier": "prettier \"(e2e|src)/**/*.+(js|jsx|ts|tsx|json)\"",
+    "format": "yarn prettier --write",
+    "lint": "eslint ./",
+    "validate": "yarn prettier --list-different && yarn tsc && yarn lint",
+    "run-android": "react-native run-android --variant=debug --appId=org.pathcheck.covidsafepaths.bt",
+    "run-ios": "yarn install:pod && react-native run-ios --scheme \"BT_Development\" --configuration \"Debug-BT\" --simulator \"iPhone 11 (13.5)\"",
+    "preinstall": "node -e \"if(process.env.npm_execpath.indexOf('yarn') === -1) throw new Error('You must use Yarn to install, not NPM')\"",
+    "install:pod": "cd ios && bundle install --quiet && bundle exec pod install --silent",
+    "postinstall": "npx react-native-jetifier",
+    "detox-setup": "detox clean-framework-cache && detox build-framework-cache",
+    "build:e2e:android": "detox build -c android.emu.release",
+    "test:e2e:android": "detox test -c android.emu.release",
+    "build:e2e:ios": "detox build -c iphone11.sim",
+    "test:e2e:iphone11": "detox test -c iphone11.sim --loglevel=warn",
+    "test:e2e:iphone-se": "detox test -c iphone-se.sim --loglevel=warn",
+    "test:e2e:iphone8": "detox test -c iphone8.sim --loglevel=warn",
+    "i18n:check": "./src/locales/check.sh",
+    "i18n:extract": "i18next",
+    "i18n:pull": "./src/locales/pull.sh",
+    "i18n:push": "./src/locales/push.sh",
+    "test": "jest --config=./jest/config.js",
+    "test:watch": "jest --config=./jest/config.js --watch",
+    "assemble-android-debug": "react-native bundle --platform android --dev true --entry-file index.js --bundle-output android/app/src/main/assets/index.android.bundle --assets-dest android/app/src/main/res && cd android && ./gradlew assembleDebug"
+  },
+  "husky": {
+    "hooks": {
+      "pre-push": "yarn validate && yarn test"
+    }
+  },
+  "rnpm": {
+    "assets": [
+      "shared/assets/fonts"
+    ]
+  },
+  "dependencies": {
+    "@react-native-community/async-storage": "^1.8.1",
+    "@react-native-community/datetimepicker": "^2.3.2",
+    "@react-native-community/masked-view": "^0.1.10",
+    "@react-native-community/netinfo": "^5.9.4",
+    "@react-native-community/push-notification-ios": "^1.4.0",
+    "@react-navigation/bottom-tabs": "^5.5.2",
+    "@react-navigation/native": "5.5.1",
+    "@react-navigation/stack": "5.1.1",
+    "array-flat-polyfill": "^1.0.1",
+    "dayjs": "^1.8.24",
+    "i18next": "^19.3.3",
+    "prop-types": "^15.7.2",
+    "react": "16.11.0",
+    "react-i18next": "^11.4.0",
+    "react-native": "0.62.2",
+    "react-native-config": "^1.2.1",
+    "react-native-gesture-handler": "^1.6.1",
+    "react-native-linear-gradient": "^2.5.6",
+    "react-native-local-resource": "^0.1.6",
+    "react-native-permissions": "^2.0.10",
+    "react-native-reanimated": "^1.7.1",
+    "react-native-safe-area-context": "^3.0.5",
+    "react-native-screens": "^2.8.0",
+    "react-native-simple-crypto": "^0.2.12",
+    "react-native-splash-screen": "^3.2.0",
+    "react-native-svg": "^12.0.3",
+    "react-native-webview": "^8.1.2",
+    "reanimated-bottom-sheet": "^1.0.0-alpha.19"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.8.6",
+    "@babel/runtime": "^7.8.4",
+    "@jumpn/react-native-jetifier": "^0.1.4",
+    "@react-native-community/eslint-config": "^0.0.7",
+    "@testing-library/jest-native": "^3.3.0",
+    "@testing-library/react-native": "^7.0.1",
+    "@types/jest": "^26.0.9",
+    "@types/react": "^16.9.35",
+    "@types/react-native": "^0.62.12",
+    "@types/react-navigation": "^3.4.0",
+    "@types/react-test-renderer": "^16.9.2",
+    "@typescript-eslint/eslint-plugin": "^3.1.0",
+    "@typescript-eslint/parser": "^3.1.0",
+    "babel-jest": "^26.2.2",
+    "bats": "^1.1.0",
+    "detox": "^16.1.1",
+    "eslint": "^7.1.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-import-resolver-typescript": "^2.0.0",
+    "eslint-plugin-detox": "^1.0.0",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-jest": "^23.8.2",
+    "eslint-plugin-json": "^2.1.1",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-prettier": "^3.1.3",
+    "eslint-plugin-react": "^7.20.0",
+    "eslint-plugin-react-hooks": "^4.0.3",
+    "fishery": "^0.4.1",
+    "husky": "^4.2.3",
+    "i18next-parser": "tstirrat/i18next-parser#guard-plural-rule",
+    "jest": "^26.2.2",
+    "lint-diff": "^1.2.1",
+    "lint-staged": "^10.0.9",
+    "logkitty": "^0.7.1",
+    "metro-react-native-babel-preset": "^0.58.0",
+    "prettier": "^2.0.5",
+    "react-native-svg-transformer": "^0.14.3",
+    "react-test-renderer": "^16.13.1",
+    "typescript": "^3.9.3"
+  },
+  "detox": {
+    "artifacts": {
+      "rootDir": "./e2e/artifacts/",
+      "plugins": {
+        "screenshot": {
+          "shouldTakeAutomaticSnapshots": true,
+          "takeWhen": {
+            "testStart": false,
+            "testDone": false
+          }
+        }
+      }
+    },
+    "configurations": {
+      "iphone11.sim": {
+        "binaryPath": "ios/build/Build/Products/Release-BT-iphonesimulator/BT.app",
+        "build": "xcodebuild -workspace ios/COVIDSafePaths.xcworkspace -scheme BT_Production -configuration Release-BT -sdk iphonesimulator -derivedDataPath ios/build",
+        "type": "ios.simulator",
+        "device": {
+          "type": "iPhone 11"
+        }
+      },
+      "iphone8.sim": {
+        "binaryPath": "ios/build/Build/Products/Release-BT-iphonesimulator/BT.app",
+        "build": "xcodebuild -workspace ios/COVIDSafePaths.xcworkspace -scheme BT_Production -configuration Release-BT -sdk iphonesimulator -derivedDataPath ios/build",
+        "type": "ios.simulator",
+        "device": {
+          "type": "iPhone 8"
+        }
+      },
+      "iphone-se.sim": {
+        "binaryPath": "ios/build/Build/Products/Release-BT-iphonesimulator/BT.app",
+        "build": "xcodebuild -workspace ios/COVIDSafePaths.xcworkspace -scheme BT_Production -configuration Release-BT -sdk iphonesimulator -derivedDataPath ios/build",
+        "type": "ios.simulator",
+        "device": {
+          "type": "iPhone SE (2nd generation)"
+        }
+      }
+    },
+    "runner-config": "./jest/detox.config.js",
+    "test-runner": "jest"
+  }
+}

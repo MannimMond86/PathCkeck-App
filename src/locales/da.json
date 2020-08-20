@@ -1,0 +1,31 @@
+{
+  "_display_name": "Dansk",
+  "about": {
+    "operating_system_abbr": "OS:",
+    "version": "Version:"
+  },
+  "assessment": {
+    "agree_question_description": "Screeningen hjælper dig med at tage beslutninger om at søge passende medicinsk behandling. Den er ikke beregnet til diagnose eller behandling af sygdom eller andre tilstande.",
+    "agree_question_text": "Formål med denne COVID-19-screening",
+    "caregiver_cta": "Næste",
+    "complete_cta": "Udført",
+    "distancing_cta": "Næste",
+    "isolate_cta": "Næste",
+    "next": "Næste"
+  },
+  "common": {
+    "continue": "Fortsæt",
+    "done": "Udført",
+    "next": "Udført"
+  },
+  "label": {
+    "launch_enable_notif": "Aktivér notifikationer",
+    "launch_get_started": "Lad os komme i gang",
+    "legal_page_address": "PathCheck Foundation\n58 Day Street\nBox 441621\nSomerville, MA 02144",
+    "privacy_policy": "Privatlivspolitik"
+  },
+  "screen_titles": {
+    "about": "Om",
+    "legal": "Juridisk"
+  }
+}

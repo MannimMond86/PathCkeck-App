@@ -1,0 +1,21 @@
+{
+  "_display_name": "Français",
+  "assessment": {
+    "caregiver_cta": "Suivant",
+    "distancing_cta": "Suivant",
+    "isolate_cta": "Suivant",
+    "next": "Suivant"
+  },
+  "common": {
+    "next": "Suivant"
+  },
+  "label": {
+    "launch_enable_notif": "Activer les notifications",
+    "launch_get_started": "Commencer",
+    "legal_page_address": "PathCheck Foundation\n58 Day Street\nBox 441621\nSomerville, MA 02144"
+  },
+  "screen_titles": {
+    "about": "À propos",
+    "legal": "Juridique"
+  }
+}

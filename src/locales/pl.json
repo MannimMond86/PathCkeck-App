@@ -1,0 +1,73 @@
+{
+  "_display_name": "Polski",
+  "about": {
+    "operating_system_abbr": "OS:",
+    "version": "Wersja:"
+  },
+  "assessment": {
+    "caregiver_cta": "Dalej",
+    "caregiver_title": "Powiadom opiekuna",
+    "complete_cta": "Gotowe",
+    "complete_title": "Wszystko gotowe!",
+    "distancing_cta": "Dalej",
+    "emergency_cta": "Wezwij służby ratunkowe",
+    "emergency_title": "Służby ratunkowe",
+    "isolate_cta": "Dalej",
+    "isolate_title": "Odizoluj się",
+    "next": "Dalej",
+    "share_cta": "Rozumiem i wyrażam zgodę",
+    "share_cta_skip": "Nie, dziękuję, nie chcę udostępniać danych",
+    "share_title": "Publikuj anonimowe dane",
+    "start_cta": "Start",
+    "start_description": "Twoje informacje są prywatne, anonimowe i szyfrowane. Żadne dane nie opuszczają twojego urządzenia, chyba że wyrazisz na to zgodę.",
+    "start_title": "Odpowiedz na pytania dotyczące objawów i historii medycznej, aby dowiedzieć się, co dalej robić z COVID-19"
+  },
+  "common": {
+    "continue": "Dalej",
+    "done": "Gotowe",
+    "next": "Dalej",
+    "something_went_wrong": "Coś poszło nie tak",
+    "start": "Start"
+  },
+  "export": {
+    "code_input_title_bluetooth": "Zweryfikuj swoją diagnozę",
+    "complete_body_bluetooth": "Wybierając opcję dzielenia się swoim statusem i anonimowego powiadamiania innych, pomagasz powstrzymać rozprzestrzenianie się wirusa i chronić innych w swojej społeczności.",
+    "complete_title": "Dziękujemy za zapewnienie bezpieczeństwa Twojej społeczności!",
+    "consent_button_title": "Rozumiem i wyrażam zgodę",
+    "publish_consent_body_bluetooth": "Udostępnianie pozytywnej diagnozy jest opcjonalne i możne odbywać się tylko za Twoją zgodą. \n\nJeśli zdecydujesz się to zrobić, pomagasz innym członkom społeczności w podejmowaniu świadomych decyzji dotyczących ich zdrowia i odgrywasz swoją rolę w powstrzymywaniu rozprzestrzeniania się wirusa. \n\nJedyne udostępniane informacje to losowy zestaw liczb wymienianych przez telefon przez Bluetooth z innymi telefonami, które były w pobliżu w ciągu ostatnich 14 dni, wraz z ważoną oceną ryzyka na podstawie czasu wystąpienia objawów.",
+    "publish_consent_title_bluetooth": "Powiadom innych w swojej społeczności",
+    "start_body_bluetooth": "Wybierz anonimowe powiadomienie innych osób, z którymi mogłeś się spotkać i pomóż swojej społeczności powstrzymać rozprzestrzenianie się wirusa.",
+    "start_title_bluetooth": "Pomóż powstrzymać rozprzestrzenianie się wirusa i chroń innych w Twojej społeczności, jeśli zdiagnozowano u Ciebie pozytywny wynik testu na COVID-19."
+  },
+  "exposure_history": {
+    "how_does_this_work": "Jak to działa?",
+    "last_days": "Ostatnie 21 dni",
+    "why_did_i_get_an_en": "Dlaczego otrzymałem powiadomienie o ekspozycji?",
+    "why_did_i_get_an_en_para": "Otrzymasz powiadomienie o narażeniu, gdy osoba, którą napotkałeś na swojej drodze, otrzyma potwierdzoną, pozytywną diagnozę lub test na COVID-19 i zdecyduje się powiadomić innych"
+  },
+  "home": {
+    "bluetooth": {
+      "all_services_on_subheader": "Powiadomienia o narażeniu są włączone",
+      "tracing_off_header": "Powiadomienia o narażeniu wyłączone",
+      "tracing_off_subheader": "Włącz powiadomienia o narażeniu, aby otrzymywać informacje o możliwych ekspozycjach"
+    }
+  },
+  "label": {
+    "launch_enable_notif": "Włącz powiadomienia",
+    "launch_get_started": "Zaczynamy",
+    "launch_screen1_header": "Witamy w PathCheck",
+    "legal_page_address": "PathCheck Foundation\n58 Day Street \nBox 441621 \nSomerville, MA 02144",
+    "privacy_policy": "Polityka prywatności",
+    "unknown": "nieznany"
+  },
+  "navigation": {
+    "exposure_history": "Historia Ekspozycji",
+    "more": "Więcej",
+    "self_assessment": "Zdrowie"
+  },
+  "screen_titles": {
+    "about": "O nas",
+    "exposure_history": "Historia Ekspozycji",
+    "legal": "Informacje prawne"
+  }
+}
